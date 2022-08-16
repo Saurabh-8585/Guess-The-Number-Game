@@ -14,13 +14,13 @@ document.getElementById('btn').onclick = function () {
     }
     else if (userInput > randomNumber) {
          score++
-        document.getElementById('ans').innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Your guess greater than that number`;
+        document.getElementById('ans').innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Your guess greater than that number.Try Again!!`;
         document.getElementById('ans').style.color = "red";
     }
 
     else if (userInput < randomNumber) {
         score++
-        document.getElementById('ans').innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Your guess is less than that number`;
+        document.getElementById('ans').innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Your guess is less than that number.Try Again!!`;
         document.getElementById('ans').style.color = "red";
     }
 }
